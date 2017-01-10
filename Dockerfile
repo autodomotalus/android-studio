@@ -14,10 +14,6 @@ RUN apt-get update
 
 # Install X11
 RUN apt-get install -y x11-apps
-
-# Install specific libraries 
-RUN apt-get install -y lib32z1 lib32ncurses5 lib32bz2-1.0 lib32stdc++6
-
 # Clean up
 RUN apt-get clean
 RUN apt-get purge
