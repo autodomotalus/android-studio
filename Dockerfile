@@ -1,4 +1,4 @@
-FROM autodomotalus/java8
+FROM autodomotalus/java7
 
 MAINTAINER Autodomotalus <https://github.com/autodomotalus>
 
