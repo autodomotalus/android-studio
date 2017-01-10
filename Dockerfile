@@ -1,4 +1,4 @@
-FROM autodomotalus/android-sdk
+FROM autodomotalus/java8
 
 MAINTAINER Autodomotalus <https://github.com/autodomotalus>
 
