@@ -7,9 +7,10 @@ RUN apt-get update
 # Download Android Studio 2.2.3.0
 RUN curl 'https://dl.google.com/dl/android/studio/ide-zips/2.2.3.0/android-studio-ide-145.3537739-linux.zip' > /tmp/studio.zip && unzip -d /opt /tmp/studio.zip && rm /tmp/studio.zip
 
-# Install some prerequisites
-RUN apt-get install -y libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
-#lib32z1 lib32ncurses5 lib32bz2-1.0 lib32stdc++6
+# Install librairies
+RUN apt-get install -y lib32z1 lib32ncurses5 lib32bz2-1.0 lib32stdc++6
+#libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
+
 
 # Install X11
 RUN apt-get install -y x11-apps
